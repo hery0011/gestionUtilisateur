@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+h1{
+    color: dodgerblue;
+    text-align: center;
+}
+.cadre{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    background-color: lightgreen;
+}
+.paddin{
+    padding-top: 50px;
+}
+input[placeholder]{
+    text-align: center;
+}

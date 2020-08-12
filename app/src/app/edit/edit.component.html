@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row paddin">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 cadre">
+            <h1>edit utilisateur</h1>
+
+            <button routerLink="/affiche" class="btn btn-primary">voir listes des etudiants</button>
+            <form [formGroup]="addForm">
+                <div class="form-group">
+                    <label for="nom">nom:</label>
+                    <input type="text" formControlName="nom" name="nom" placeholder="nom" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">prénom:</label>
+                    <input type="text" formControlName="prenom" name="prenom" placeholder="prénom" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="mail">mail:</label>
+                    <input type="mail" formControlName="mail" name="mail" placeholder="mail" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">password:</label>
+                    <input type="password" formControlName="password" name="password" placeholder="password" class="form-control">
+                </div>
+                <button (click)="update()" class="btn btn-success btn-block btn-lg">Modifier</button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
